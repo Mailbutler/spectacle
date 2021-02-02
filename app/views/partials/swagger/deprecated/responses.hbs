@@ -26,7 +26,7 @@
                 </dt>
                 <dd class="swagger-response-{{@key}}">
                     {{#if $ref}}
-                        {{>swagger/response response=(json-schema-resolve-ref $ref)}}
+                        {{>swagger/response response=(schemaResolveReference $ref)}}
                     {{else}}
                         {{>swagger/response response=.}}
                     {{/if}}
